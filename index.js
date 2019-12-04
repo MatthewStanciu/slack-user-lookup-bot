@@ -23,8 +23,8 @@ controller.on('slash_command', (bot, message) => {
     const user = message.text.split('|')[1]
     const userTrimmed = user.slice(0, user.length-1)
     
-    bot.replyPrivate(message, `<@${id}>'s User ID is ${id}`)
+    bot.replyPrivate(message, `<@${id}>’s User ID is ${id}`)
+  } else {
+    bot.replyPrivate(message, `${message.text}’s display name is <@${message.text}>`)
   }
-  else
-    bot.replyPrivate(message, `${message.text}'s display name is <@${message.text}>`)
 })
