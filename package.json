@@ -4,7 +4,8 @@
   "description": "A slack bot that gets a user id from display name and vice versa",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js"
+    "build": "node index.js",
+    "fmt": "npx prettier \"*.js\" --single-quote --no-semi --trailing-comma es5 --write"
   },
   "dependencies": {
     "botkit": "^0.7.4"
@@ -15,5 +16,8 @@
   "repository": {
     "url": "https://github.com/MatthewStanciu/slack-user-lookup-bot"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "1.19.1"
+  }
 }

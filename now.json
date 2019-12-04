@@ -1,5 +1,23 @@
 {
     "name": "slack-user-lookup-bot",
+    "build": {
+        "env": {
+          "APP_ID": "@app_id",
+          "CLIENT_ID": "@ulb-client_id",
+          "CLIENT_SECRET": "@ulb-client-secret",
+          "SIGNING_SECRET": "@ulb-signing-secret",
+          "ACCESS_TOKEN": "@ulb-access-token",
+          "USER_TOKEN": "@ulb-user-token"
+        }
+    },
+    "env": {
+      "APP_ID": "@app_id",
+      "CLIENT_ID": "@ulb-client_id",
+      "CLIENT_SECRET": "@ulb-client-secret",
+      "SIGNING_SECRET": "@ulb-signing-secret",
+      "ACCESS_TOKEN": "@ulb-access-token",
+      "USER_TOKEN": "@ulb-user-token"
+    },
     "builds": [
     {
       "src": "index.js",
