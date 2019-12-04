@@ -20,9 +20,6 @@ controller.setupWebserver(process.env.PORT || 3000, (err, webserver) => {
 controller.on('slash_command', (bot, message) => {
   if (message.text.includes('@')) {
     const id = message.text.split('|')[0].slice(2)
-    const user = message.text.split('|')[1]
-    const userTrimmed = user.slice(0, user.length-1)
-    
     bot.replyPrivate(message, `<@${id}>'s User ID is ${id}`)
   }
   else
