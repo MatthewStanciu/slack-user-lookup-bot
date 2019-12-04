@@ -1,0 +1,9 @@
+{
+    "name": "slack-user-lookup-bot",
+    "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server"
+    }
+  ]
+}
